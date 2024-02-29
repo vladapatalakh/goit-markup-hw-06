@@ -115,6 +115,14 @@ a {
 
 /* team */
 
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-list {
+  background-color: #ffffff;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -142,14 +150,6 @@ a {
 }
 
 /* portfolio */
-
-.portfolio {
-  background-color: #f4f4fd;
-}
-
-.portfolio-item {
-  background-color: #ffffff;
-}
 
 .portfolio-title {
   font-weight: 700;
