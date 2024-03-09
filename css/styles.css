@@ -2,27 +2,85 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
-
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: 332px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -36,6 +94,11 @@ a {
 
 .header-logo-color {
   color: #2e2f42;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -53,6 +116,13 @@ a {
 
 .header-address {
   font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.header-contact-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-contact-link {
@@ -73,6 +143,16 @@ a {
 .hero {
   background-color: #2e2f42;
 }
+
+.hero-wrap {
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding: 188px 316px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -80,6 +160,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 .hero-btn {
   font-weight: 500;
@@ -87,9 +168,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  cursor: pointer;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 0;
 }
 
 .hero-btn:hover,
@@ -99,12 +182,29 @@ a {
 
 /* advantages */
 
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.advantages-item {
+  width: calc((100% -2 * 24px) / 4);
+}
+
 .advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .advantages-text {
