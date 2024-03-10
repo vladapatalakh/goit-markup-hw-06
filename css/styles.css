@@ -70,7 +70,6 @@ address {
 .header .container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-navigation {
@@ -99,6 +98,7 @@ address {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-menu-item {
