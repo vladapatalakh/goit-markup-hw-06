@@ -89,6 +89,7 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .header-logo-color {
@@ -135,6 +136,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
 
 .header-contact-link:hover,
