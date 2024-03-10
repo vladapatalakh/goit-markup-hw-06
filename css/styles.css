@@ -90,7 +90,6 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
-  padding: 24px 0;
 }
 
 .header-logo-color {
@@ -100,6 +99,10 @@ address {
 .header-menu-list {
   display: flex;
   gap: 40px;
+}
+
+.header-menu-item {
+  padding: 24px 0;
 }
 
 .header-menu-link {
