@@ -29,7 +29,6 @@ a {
 }
 
 button {
-  cursor: pointer;
 }
 
 img {
@@ -65,13 +64,14 @@ address {
 /* header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -145,12 +145,8 @@ address {
 }
 
 .hero-wrap {
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
-  padding: 188px 316px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -158,9 +154,11 @@ address {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
-  margin-bottom: 48px;
+  max-width: 496px;
+  display: block;
+  margin: 0 auto 48px;
+  text-align: center;
 }
 .hero-btn {
   font-weight: 500;
@@ -172,7 +170,12 @@ address {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 16px 32px;
-  border: 0;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -220,6 +223,13 @@ address {
 }
 
 .team .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
@@ -234,6 +244,13 @@ address {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.container-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
 }
 
 .team-subtitle {
@@ -243,6 +260,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -254,6 +272,11 @@ address {
 
 /* portfolio */
 
+.portfolio .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -262,6 +285,26 @@ address {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+}
+
+.container-portfolio {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-subtitle {
@@ -282,6 +325,8 @@ address {
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .foter-logo {
@@ -292,6 +337,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -299,6 +346,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 .footer-logo-color {
