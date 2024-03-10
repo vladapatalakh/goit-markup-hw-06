@@ -56,7 +56,8 @@ address {
 
 .container {
   max-width: 1158px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -69,8 +70,6 @@ address {
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -91,6 +90,7 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .header-logo-color {
@@ -146,11 +146,6 @@ address {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-
-/* .hero-wrap {
-  padding-top: 188px;
-  padding-bottom: 188px;
-} */
 
 .hero-title {
   font-weight: 700;
