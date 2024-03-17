@@ -108,29 +108,27 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+}
+
+.line {
   position: relative;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
-}
-
-.header-menu-link::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-}
-
-.header-menu-link:active::after {
-  transform: translateX(-100%);
 }
 
 .header-address {
@@ -363,6 +361,11 @@ address {
 
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item:hover .portfolio-text-box {
