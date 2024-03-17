@@ -106,6 +106,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -131,6 +132,7 @@ address {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link:hover,
@@ -151,6 +153,8 @@ address {
     url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -181,6 +185,7 @@ address {
   border: none;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -202,6 +207,18 @@ address {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
+}
+
+.icon-container {
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .advantages-subtitle {
@@ -277,6 +294,7 @@ address {
   display: flex;
   gap: 24px;
   margin: 0 16px;
+  justify-content: center;
 }
 
 .team-contact-link {
@@ -287,9 +305,11 @@ address {
   justify-content: center;
   align-items: center;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-contact-link:hover {
+.team-contact-link:hover,
+.team-contact-link:focus {
   background-color: #404bbf;
 }
 
@@ -356,10 +376,11 @@ address {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -392,7 +413,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-contact-list {
@@ -408,9 +429,11 @@ address {
   justify-content: center;
   align-items: center;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-link:hover {
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   background-color: #31d0aa;
 }
 
