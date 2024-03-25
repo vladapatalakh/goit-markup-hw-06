@@ -532,30 +532,44 @@ input[name="email"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border-color: #e7e9fc;
-  background-color: #f4f4fd;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
   cursor: pointer;
-  border-width: 1px;
-  border-style: solid;
-  display: block;
+  padding: 0;
   margin-left: auto;
   margin-bottom: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-btn:hover,
 .close-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .icon-close {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: #ffffff;
 }
 
 .form-text {
@@ -619,6 +633,10 @@ input[name="email"] {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-field-text {
+  margin-bottom: 16px;
+}
+
 .modal-label-textarea {
   display: block;
   font-weight: 400;
@@ -630,6 +648,11 @@ input[name="email"] {
 }
 
 .modal-textarea {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
   padding-left: 16px;
   padding-top: 8px;
   resize: none;
@@ -638,7 +661,6 @@ input[name="email"] {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  color: #2e2f42;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -650,7 +672,15 @@ input[name="email"] {
 .modal-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
