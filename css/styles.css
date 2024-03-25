@@ -677,6 +677,10 @@ input[name="email"] {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-checkbox {
+  margin-bottom: 24px;
+}
+
 .checkbox-label {
   font-weight: 400;
   font-size: 12px;
@@ -700,6 +704,15 @@ input[name="email"] {
   fill: transparent;
 }
 
+.modal-check {
+}
+
+.modal-check:checked + .checkbox-label .privacy-box {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 .icon-galochka {
 }
 
@@ -708,4 +721,31 @@ input[name="email"] {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+
+.send-btn {
+  /* position: absolute;
+  bottom: 20px; */
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #404bbf;
 }
